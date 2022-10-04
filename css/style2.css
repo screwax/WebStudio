@@ -1,22 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+.body {
+    font-family: Roboto;
+}
+
 .logo {
+    text-decoration: none;
     font-family: Raleway;
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: #000000;
+}
+
+.logo-blue {
+    color: #2196F3;
 }
 
 .navigation .studio {
-    font-family: Roboto;
-    font-style: normal;
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
 }
@@ -25,21 +32,22 @@
 }
 
 .navigation .portfolio {
-    font-family: 'Roboto';
-    font-style: normal;
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
+    color: #212121;
+}
+.navigation .portfolio:hover {
     color: #2196F3;
 }
 
 .navigation .contacts {
-    font-family: 'Roboto';
-    font-style: normal;
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
 }
@@ -48,61 +56,45 @@
 }
 
 .contact .mail {
-    font-family: 'Roboto';
-    font-style: normal;
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #2196F3;
+    color: #212121;
 }
 .contact .mail:hover {
-    color: #212121;
+    color: #2196F3;
 }
 
 .contact .tel {
-    font-family: 'Roboto';
-    font-style: normal;
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: #212121;
 }
 .contact .tel:hover {
     color: #2196F3;
 }
 
 .address {
-    font-family: 'Roboto';
-    font-style: normal;
+    text-decoration: none;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: #212121;
 }
-
-.buttons .selectblue {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    background: #2196F3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+.address:hover {
+    color: #2196F3;
 }
 
 .buttons .select {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -115,21 +107,17 @@
 }
 
 .items .text {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
 }
 
 .items .desc {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
 }

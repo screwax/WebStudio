@@ -1,32 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+.body {
+    font-family: Roboto;
+}
+
+
 .logo {
+    text-decoration: none;
     font-family: Raleway;
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.logo-blue {
     color: #2196F3;
 }
 
 .navigation .studio {
-    font-family: Roboto;
-    font-style: normal;
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
+    color: #212121;
+}
+.navigation .studio:hover {
     color: #2196F3;
 }
 
 .navigation .portfolio {
-    font-family: 'Roboto';
-    font-style: normal;
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
 }
@@ -35,11 +45,10 @@
 }
 
 .navigation .contacts {
-    font-family: 'Roboto';
-    font-style: normal;
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
 }
@@ -48,26 +57,25 @@
 }
 
 .contact .mail {
-    font-family: 'Roboto';
-    font-style: normal;
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #2196F3;
+    color: #212121;
 }
 .contact .mail:hover {
-    color: #212121;
+    text-decoration: none;
+    color: #2196F3;
 }
 
 .contact .tel {
-    font-family: 'Roboto';
-    font-style: normal;
+    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: #212121;
 }
 .contact .tel:hover {
     color: #2196F3;
@@ -75,11 +83,9 @@
 
 .title {
     background-color: #2F303A;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -90,11 +96,9 @@
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     display: flex;
     align-items: center;
     text-align: center;
@@ -106,76 +110,66 @@
 }
 
 .list .text {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
 }
 
 .list .desc {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
 }
 
 .subtitle {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
 }
 
 .subtitle2 {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
 }
 
 .items .text2 {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
 }
 
 .items .desc2 {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
 }
 
 .address {
-    font-family: 'Roboto';
-    font-style: normal;
+    text-decoration: none;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: #212121;
+}
+.address:hover {
+    color: #2196F3;
 }
