@@ -61,7 +61,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: #BEBEBE;
 }
 .contact .mail:hover {
     color: #2196F3;
@@ -73,7 +73,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: #BEBEBE;
 }
 .contact .tel:hover {
     color: #2196F3;
@@ -92,6 +92,7 @@
 }
 
 .buttons .select {
+    border: 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
