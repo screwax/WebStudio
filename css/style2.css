@@ -5,6 +5,7 @@
     font-family: Roboto;
 }
 
+
 .logo {
     text-decoration: none;
     font-family: Raleway;
@@ -19,7 +20,7 @@
     color: #2196F3;
 }
 
-.navigation .studio {
+.nav-list .nav-items {
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -27,35 +28,11 @@
     letter-spacing: 0.02em;
     color: #212121;
 }
-.navigation .studio:hover {
+.nav-list .nav-items:hover {
     color: #2196F3;
 }
 
-.navigation .portfolio {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #212121;
-}
-.navigation .portfolio:hover {
-    color: #2196F3;
-}
-
-.navigation .contacts {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #212121;
-}
-.navigation .contacts:hover {
-    color: #2196F3;
-}
-
-.contact .mail {
+.links .items {
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -63,23 +40,11 @@
     letter-spacing: 0.02em;
     color: #BEBEBE;
 }
-.contact .mail:hover {
+.links .items:hover {
     color: #2196F3;
 }
 
-.contact .tel {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #BEBEBE;
-}
-.contact .tel:hover {
-    color: #2196F3;
-}
-
-.address {
+.footer-address {
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
@@ -87,11 +52,11 @@
     letter-spacing: 0.03em;
     color: #212121;
 }
-.address:hover {
+.footer-address:hover {
     color: #2196F3;
 }
 
-.buttons .select {
+.hero-buttons .buttons-select {
     border: 0;
     font-weight: 500;
     font-size: 16px;
@@ -102,12 +67,12 @@
     background: #F5F4FA;
     border-radius: 4px;
 }
-.buttons .select:hover {
+.hero-buttons .buttons-select:hover {
     color: #FFFFFF;
     background: #2196F3;
 }
 
-.items .text {
+.hero-items .hero-text {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -115,7 +80,7 @@
     color: #212121;
 }
 
-.items .desc {
+.hero-items .hero-desc {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;

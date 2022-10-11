@@ -20,7 +20,7 @@
     color: #2196F3;
 }
 
-.navigation .studio {
+.nav-list .nav-items {
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -28,35 +28,11 @@
     letter-spacing: 0.02em;
     color: #212121;
 }
-.navigation .studio:hover {
+.nav-list .nav-items:hover {
     color: #2196F3;
 }
 
-.navigation .portfolio {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #212121;
-}
-.navigation .portfolio:hover {
-    color: #2196F3;
-}
-
-.navigation .contacts {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #212121;
-}
-.navigation .contacts:hover {
-    color: #2196F3;
-}
-
-.contact .mail {
+.links .items {
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -64,23 +40,23 @@
     letter-spacing: 0.02em;
     color: #BEBEBE;
 }
-.contact .mail:hover {
+.links .items:hover {
     color: #2196F3;
 }
 
-.contact .tel {
+.footer-address {
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #BEBEBE;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #212121;
 }
-.contact .tel:hover {
+.footer-address:hover {
     color: #2196F3;
 }
 
-.title {
+.hero-title {
     background-color: #2F303A;
     font-weight: 900;
     font-size: 44px;
@@ -91,7 +67,7 @@
     color: #FFFFFF;
 }
 
-.button {
+.hero-button {
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -105,11 +81,11 @@
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
-.button:hover {
+.hero-button:hover {
     background-color: #212121;
 }
 
-.list .text {
+.hero-list_1 .hero-text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -118,7 +94,7 @@
     color: #212121;
 }
 
-.list .desc {
+.hero-list_1 .hero-desc {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -126,7 +102,7 @@
     color: #757575;
 }
 
-.subtitle {
+.hero-subtitle_1 {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -135,7 +111,7 @@
     color: #212121;
 }
 
-.subtitle2 {
+.hero-subtitle_2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -144,7 +120,7 @@
     color: #212121;
 }
 
-.items .text2 {
+.hero-list_3 .hero-text_2 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -153,23 +129,11 @@
     color: #212121;
 }
 
-.items .desc2 {
+.hero-list_3 .hero-desc_2 {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
-}
-
-.address {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
-.address:hover {
-    color: #2196F3;
 }
