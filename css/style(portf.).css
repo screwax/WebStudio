@@ -32,7 +32,7 @@
     color: #2196F3;
 }
 
-.links .items {
+.links .link-items {
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -40,7 +40,7 @@
     letter-spacing: 0.02em;
     color: #BEBEBE;
 }
-.links .items:hover {
+.links .link-items:hover {
     color: #2196F3;
 }
 
@@ -50,13 +50,13 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: #FFFFFF;
 }
 .footer-address:hover {
     color: #2196F3;
 }
 
-.hero-buttons .buttons-select {
+.hero-buttons .hero-select {
     border: 0;
     font-weight: 500;
     font-size: 16px;
@@ -67,12 +67,12 @@
     background: #F5F4FA;
     border-radius: 4px;
 }
-.hero-buttons .buttons-select:hover {
+.hero-buttons .hero-select:hover {
     color: #FFFFFF;
     background: #2196F3;
 }
 
-.hero-items .hero-text {
+.project-list .project-text {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -80,10 +80,15 @@
     color: #212121;
 }
 
-.hero-items .hero-desc {
+.project-list .project-desc {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
+}
+
+.project-list .project-pic {
+    width: 300;
+    height: 300;
 }
