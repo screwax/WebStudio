@@ -20,7 +20,7 @@
     color: #2196F3;
 }
 
-.nav-list .nav-items {
+.navigation-list .navigation-items {
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -28,7 +28,7 @@
     letter-spacing: 0.02em;
     color: #212121;
 }
-.nav-list .nav-items:hover {
+.navigation-list .navigation-items:hover {
     color: #2196F3;
 }
 
@@ -72,7 +72,7 @@
     background: #2196F3;
 }
 
-.project-list .project-text {
+.project-listes .project-text {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -80,7 +80,7 @@
     color: #212121;
 }
 
-.project-list .project-desc {
+.project-listse .project-desc {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
@@ -88,7 +88,7 @@
     color: #757575;
 }
 
-.project-list .project-pic {
+.project-listes .project-pic {
     width: 300;
     height: 300;
 }
