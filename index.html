@@ -1,189 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/studio.css">
+    <title>WebStudio</title>
 </head>
-<body class="body">
 
-    <!--header-->
+<body>
 
-
-    <header class="header">
-
-        <a class="logo" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
-
-        <!--tabs-->
-
-        <nav class="header-navigation">
-
-        <ul class="navigation-list">
-            <li class="navigation-item">
-                <a class="navigation-items" href="./index.html">Студiя</a>
-            </li>
-            <li class="navigation-item">
-                <a class="navigation-items" href="./portfolio.html">Портфолiо</a>
-            </li>
-            <li class="navigation-item">
-                <a class="navigation-items" href="./index.html">Контакти</a>
-            </li>
-        </ul>
-
-        </nav>
-
-        <!--contacts-->
-
-
-        <ul class="links">
-            <li class="link-item"><a class="link-items" href="mailto:info@devstudio.com" target="_blank">info@devstudio.com</a></li>
-            <li class="link-item"><a class="link-items" href="tel:380961111111">+38 096 111 11 11</a></li>
-        </ul>
-
-
+    <header class="header-section">
+        <div class="header-container container">
+            <a href="./index.html" class="header-logo">Web<span class="logo-black">Studio</span></a>
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-item">
+                        <a href="./index.html" class="header-link">Студія</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="./portfolio.html" class="header-link">Портфоліо</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#" class="header-link">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="header-contacts">
+                <a href="mailto:info@devstudio.com" class="header-link header-contact">info@devstudio.com</a>
+                <a href="tel:+380961111111" class="header-link header-contact">+38 096 111 11 11</a>
+            </ul>
+        </div>
     </header>
 
-
-    <!--main-->
-
-
-    <main class="main">
-
-        <!--fixes-->
+    <main class="main-section">
 
         <section class="hero-section">
-
-
-        <h1 class="hero-title">ЕФЕКТИВНI РIШЕННЯ ДЛЯ ВАШОГО БIЗНЕСУ</h1>
-        <button class="hero-button" type="button">Замовити послугу</button>
-
+            <h1 class="hero-title">еФЕКтивні рішення для вашого бізнесу</h1>
+            <button type="button" class="hero-but">Замовити послугу</button>
         </section>
 
-
-        <!--solutions-->
-
-        <section class="fixes-section">
-
-        <ul class="fixes-listes">
-            <li class="fixes-list">
-                <h3 class="fixes-text">УВАГА ДО ДЕТАЛЕЙ</h3>
-                <p class="fixes-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat fuga quas velit in doloribus, quasi veritatis aliquid facere dolorum, corrupti perferendis? Veritatis itaque minima ex animi nisi illum perferendis mollitia.</p>
-            </li>
-
-            <li class="fixes-list">
-                <h3 class="fixes-text">ПУНКТУАЛЬНIСТЬ</h3>
-                <p class="fixes-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam recusandae vitae et libero soluta culpa, sunt obcaecati nisi, aperiam id voluptas autem veniam quas nulla ducimus. Dolor, tempora veritatis? In.</p>
-            </li>
-
-            <li class="fixes-list">
-                <h3 class="fixes-text">ПЛАНУВАННЯ</h3>
-                <p class="fixes-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique natus, odit obcaecati error consectetur quae odio ad ducimus maiores explicabo consequuntur placeat dicta illo vitae distinctio! Temporibus corporis ea illo.</p>
-            </li>
-
-            <li class="fixes-list">
-                <h3 class="fixes-text">СУЧАСНI ТЕХНОЛОГIЇ</h3>
-                <p class="fixes-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, commodi similique. Sunt velit consequatur molestiae tempore facere accusantium commodi itaque, labore nobis dignissimos sapiente! Quia dignissimos delectus deleniti recusandae repudiandae.</p>
-            </li>
-
-        </ul>
-
+        <section class="benefits-section">
+            <div class="container">
+                <ul class="benefits-list">
+                    <li class="benefits-item">
+                        <h3 class="benefits-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                        <p class="benefits-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                            veritatis exercitationem
+                            velit magnam iure.</p>
+                    </li>
+                    <li class="benefits-item">
+                        <h3 class="benefits-title">ПунктуальнІсть</h3>
+                        <p class="benefits-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                            veritatis exercitationem
+                            velit magnam iure.
+                        </p>
+                    </li>
+                    <li class="benefits-item">
+                        <h3 class="benefits-title">ПЛАНУВАННЯ</h3>
+                        <p class="benefits-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                            veritatis exercitationem
+                            velit magnam iure.
+                        </p>
+                    </li>
+                    <li class="benefits-item">
+                        <h3 class="benefits-title">СУЧАСНІ ТЕхнології</h3>
+                        <p class="benefits-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                            veritatis exercitationem
+                            velit magnam iure.
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <!--made-->
-
-        <section class="made-section">
-
-        <h2 class="made-subtitle">ЧИМ МИ ЗАЙМАЄМОСЯ</h2>
-
-        <ul class="made-pics">
-            <li class="made-list">
-                <img class="made-pic" src="./img/studio/pc1.png" alt="keyboard">
-            </li>
-
-            <li class="made-list">
-                <img class="made-pic" src="./img/studio/man2.png" alt="phone">
-            </li>
-
-            <li class="made-list">
-                <img class="made-pic" src="./img/studio/hand3.png" alt="tablet">
-            </li>
-
-        </ul>
-
+        <section class="services-section">
+            <div class="container">
+                <h2 class="services-title">Чим ми займаємося</h2>
+                <ul class="services-list">
+                    <li class="services-item">
+                        <img src="./img/human/1.jpg" alt="картинка з людиною яка пише код" width="370" class="services-img">
+                    </li>
+                    <li class="services-item">
+                        <img src="./img/human/2.jpg" alt="картинка з людиною перевіряє адаптивність на телефонаї"
+                            width="370" class="services-img">
+                    </li>
+                    <li class="services-item">
+                        <img src="./img/human/3.jpg" alt="картинка з людиною яка вибарає колір" width="370" class="services-img">
+                    </li>
+                </ul>
+            </div>
         </section>
-
-        <!--team-->
 
         <section class="team-section">
-
-        <h2 class="team-subtitle">НАША КОМАНДА</h2>
-
-        <ul class="team-list">
-            <li class="team-list">
-                <img class="team-pic" src="./img/studio/man4.jpg" alt="man1">
-                <h3 class="team-text">Iгор Дем'яненко</h3>
-                <p class="team-desc">Product Designer</p>
-            </li>
-
-            <li class="team-list">
-                <img class="team-pic" src="./img/studio/woman5.jpg" alt="woman1">
-                <h3 class="team-text">Ольга Репiна</h3>
-                <p class="team-desc">Frontend Developer</p>
-            </li>
-
-            <li class="team-list">
-                <img class="team-pic" src="./img/studio/man6.jpg" alt="man2">
-                <h3 class="team-text">Микола Тарасов</h3>
-                <p class="team-desc">Marketing</p>
-            </li>
-
-            <li class="team-list">
-                <img class="team-pic" src="./img/studio/man7.jpg" alt="man3">
-                <h3 class="team-text">Михайло Єрмаков</h3>
-                <p class="team-desc">UI Designer</p>
-            </li>
-
-        </ul>
-
+            <div class="container">
+                <h2 class="team-title">Наша команда</h2>
+                <ul class="team-list">
+                    <li class="team-item">
+                        <img src="./img/studio/1.jpg" alt="фото працівника 1" width="270" class="team-photo">
+                        <h3 class="team-name">Ігор Дем’яненко</h3>
+                        <h4 class="team-pos">Product Designer</h4>
+                    </li>
+                    <li class="team-item">
+                        <img src="./img/studio/2.jpg" alt="фото працівника 2x" width="270" class="team-photo">
+                        <h3 class="team-name">Ольга Репіна</h3>
+                        <h4 class="team-pos">Frontend Developer</h4>
+                    </li>
+                    <li class="team-item">
+                        <img src="./img/studio/3.jpg" alt="фото працівника 3" width="270" class="team-photo">
+                        <h3 class="team-name">Микола Тарасов</h3>
+                        <h4 class="team-pos">Marketing</h4>
+                    </li>
+                    <li class="team-item">
+                        <img src="./img/studio/4.jpg" alt="фото працівника 4" width="270" class="team-img">
+                        <h3 class="team-name">Михайло Єрмаков</h3>
+                        <h4 class="team-pos">UI Designer</h4>
+                    </li>
+                </ul>
+            </div>
         </section>
-
     </main>
 
-
-    <!--footer-->
-
-
-    <footer class="footer">
-
-        <a class="logo" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
-        <p><a class="footer-address" href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4296971,30.5343957,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0fa5f3c469:0xeabdd2dc20bc4a10!8m2!3d50.4296937!4d30.5365844?hl=ru" target="_blank">м. Київ, пр-т Лесi Українки</a></p>
-
-        
-        <!--contacts-->
-
-
-        <ul class="links">
-
-            <li class="link-item">
-                <a class="link-items" href="mailto:info@example.com" target="_blank">info@example.com</a>
-            </li>
-
-            <li class="link-item">
-                <a class="link-items" href="tel:0991111111">099 111 11 11</a>
-            </li>
-
-        </ul>
-
-
+    <footer class="footer-section">
+        <div class="container">
+            <a href="./index.html" class="footer-logo">Web<span class="logo-white">Studio</span></a>
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <address class="footer-adress">м. Київ, пр-т Лесі Українки, 26</address>
+                </li>
+                <li class="footer-item">
+                    <a href="mailto:info@example.com" class="header-link header-contact footer-contact">info@example.com</a>
+                </li>
+                <li class="footer-item">
+                    <a href="tel:+380961111111" class="header-link header-contact footer-contact">+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
     </footer>
-
-
-    <!--end-->
-
-
 </body>
+
 </html>
