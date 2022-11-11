@@ -1,4 +1,4 @@
-/* section hero */
+
 .hero-section{
     display: flex;
     flex-direction: column;
@@ -6,6 +6,7 @@
     height: 600px;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img/studio/background/studio.jpg');
 }
 .hero-title{
     font-weight: 900;
@@ -40,6 +41,33 @@
     display: flex;
     justify-content: space-between;
 }
+
+.benefits-item:before{
+    width: 270px;
+    height: 120px;
+    content: '';
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.benefits-item:nth-child(1)::before{
+    background-image: url('../img/studio/icons/connection.png');
+}
+.benefits-item:nth-child(2)::before{
+    background-image: url('../img/studio/icons/time.png');
+}
+.benefits-item:nth-child(3)::before{
+    background-image: url('../img/studio/icons/pc.png');
+}
+.benefits-item:nth-child(4)::before{
+    background-image: url('../img/studio/icons/man.png');
+}
+
 .benefits-title{
     font-weight: 700;
     font-size: 14px;
