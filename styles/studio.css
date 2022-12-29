@@ -35,12 +35,12 @@
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    transition: cubic-bezier(.11,.2,.55,1.27) 0.2s
+    transition: all cubic-bezier(.11,.2,.55,1.27) 0.2s
 }
 
 .form-container:hover>.form-icon{
     fill: #2196F3;
-    transition: ease 0.2s;
+    transition: all ease 0.2s;
 }
 
 .form-item{
@@ -78,10 +78,12 @@
     border-radius: 4px;
     cursor: pointer;
     margin-top: 4px;
+    transition: all ease 0.2s;
 }
 
 .form-field:hover+.form-svg, .form-field:focus+.form-svg{
     fill: #2196F3;
+    transition: all ease-in-out 0.3s;
 }
 
 .form-field:hover, .form-textarea:hover{
@@ -151,19 +153,18 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     z-index: 2;
-    transition: cubic-bezier(.11,.2,.55,1.27) 0.4s;
+    transition: all cubic-bezier(.11,.2,.55,1.27) 0.4s;
 }
 .overlay.is-hidden{
     opacity: 0;
     pointer-events: none;
-    transition: cubic-bezier(.11,.2,.55,1.27) 0.4s;
+    transition: all cubic-bezier(.11,.2,.55,1.27) 0.4s;
 }
 
 
 .hero-section{
     display: flex;
     flex-direction: column;
-    background-color: #2F303A;
     height: 600px;
     align-items: center;
     justify-content: center;
@@ -334,20 +335,18 @@
     height: 44px;
     justify-content: center;
     align-items: center;
-    transition: 0.2s;
+    border-radius: 50%;
+    transition: all cubic-bezier(.11,.2,.55,1.27) 0.2s;
 }
 .team-svg{
     fill: #AFB1B8;
-    transition: 0.2s;
+    transition: all ease 0.2s;
 }
 .team-link:hover{
-    border-radius: 50%;
     background: #2196F3;
-    transition: 0.2s;
 }
 .team-link:hover > svg{
     fill: #fff;
-    transition: 0.2s;
 }
 
 .clients-section{
@@ -367,19 +366,17 @@
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    transition: 0.2s;
+    transition: all ease-in-out 0.2s;
 }
 .clients-svg{
     fill: #AFB1B8;
-    transition: 0.2s;
+    transition: all ease-out 0.2s;
 }
 .clients-item:hover{
     border: 1px solid #2196F3;
-    transition: 0.2s;
 }
 .clients-item:hover > svg{
     fill: #2196F3;
-    transition: 0.2s;
 }
 
 .icons-team {
