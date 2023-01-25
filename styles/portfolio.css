@@ -1,15 +1,15 @@
 
-.portfolio-section{
+.portfolio{
     border: 1px solid #ECECEC;
     padding: 94px 0;
 }
-.filter-list{
+.portfolio__filter-list{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     width: 611px;
 }
-.filter-button{
+.portfolio__filter-button{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.61;
@@ -19,45 +19,44 @@
     background: #F5F4FA;
     border: 0;
     border-radius: 4px;
-    transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
+    transition: 0.2s;
     padding: 6px 22px;
 }
-.filter-button:hover{
+.portfolio__filter-button:hover{
     color: #fff;
     background: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transform: translateY(-10px);
+    transition: 0.2s;
 }
 
-.project-list{
+.project{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 50px;
     align-items: center;
 }
-.project-item{
+.project__item{
     border: 1px solid #EEEEEE;
     padding-bottom: 20px;
     margin-top: 0;
     position: relative;
-    transition: all ease-out 0.2s;
 }
-.project-item:nth-child(n+4){
+.project__item:nth-child(n+4){
     margin-top: 30px;
 }
-.project-text{
+.project__text{
     margin-top: 20px;
     padding: 0 24px;
 }
-.project-name{
+.project__name{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
 }
-.project-category{
+.project__category{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
@@ -66,7 +65,7 @@
     margin-top: 4px;
 }
 
-.project-overlay{
+.project__overlay{
     position: absolute;
     background: rgba(33, 150, 243, 0.9);
     width: 370px;
@@ -80,16 +79,13 @@
     top: 0;
     padding: 63px 24px;
     opacity: 0;
-    transition: all cubic-bezier(.11,.2,.55,1.27) 0.3s;
-    transform: translateY(50px) scale(1.1) rotate(10deg);
+    transition: cubic-bezier(.11,.2,.55,1.27) 0.2s;
 }
 
-.project-item:hover>.project-overlay{
+.project__item:hover>.project__overlay{
     opacity: 1;
-    transform: translateY(0px) scale(1) rotate(0deg);
 }
 
-.project-item:hover{
+.project__item:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transform: scale(1.1);
 }

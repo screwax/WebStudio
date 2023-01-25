@@ -19,34 +19,34 @@
 
 <body>
 
-    <header class="header-section">
-        <div class="header-container container">
-            <a href="./index.html" class="header-logo">Web<span class="logo-black">Studio</span></a>
-            <nav class="header-nav">
-                <ul class="header-list">
-                    <li class="header-item">
-                        <a href="./index.html" class="header-link">Студія</a>
+    <header class="header">
+        <div class="header__header-container container">
+            <a href="./index.html" class="header__logo">Web<span class="header__logo-black">Studio</span></a>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="./index.html" class="header__link header__overlay">Студія</a>
                     </li>
-                    <li class="header-item">
-                        <a href="./portfolio.html" class="header-link header-overlay">Портфоліо</a>
+                    <li class="header__item">
+                        <a href="./portfolio.html" class="header__link">Портфоліо</a>
                     </li>
-                    <li class="header-item">
-                        <a href="#" class="header-link">Контакти</a>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Контакти</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="header-contacts">
-                <a href="mailto:info@devstudio.com" class="header-link header-contact">
-                    <svg width="16" height="12" class="header-svg">
-                        <use href="./symbol-defs.svg#icon-email">
+            <ul class="contacts">
+                <a href="mailto:info@devstudio.com" class="contacts__link contacts__contact">
+                    <svg width="16" height="12" class="contacts__svg">
+                        <use href="./img/symbol-defs.svg#icon-post">
                             
                         </use>
                     </svg>
                     info@devstudio.com
                 </a>
-                <a href="tel:+380961111111" class="header-link header-contact">
-                    <svg width="10" height="16" class="header-svg">
-                        <use href="./symbol-defs.svg#icon-phone">
+                <a href="tel:+380961111111" class="contacts__link contacts__contact">
+                    <svg width="10" height="16" class="contacts__svg">
+                        <use href="./img/symbol-defs.svg#icon-phone">
                             
                         </use>
                     </svg>
@@ -56,126 +56,136 @@
         </div>
     </header>
 
-    <main class="main-section">
 
-        <section class="portfolio-section">
+    <main class="main">
+
+        <section class="portfolio">
             <div class="container">
-                <ul class='filter-list'>
-                    <li class="filter-item">
-                        <button type="button" class="filter-button">
+                <ul class='portfolio__filter-list'>
+                    <li class="portfolio__filter-item">
+                        <button type="button" class="portfolio__filter-button">
                             Усе
                         </button>
                     </li>
-                    <li class="filter-item">
-                        <button type="button" class="filter-button">
+                    <li class="portfolio__filter-item">
+                        <button type="button" class="portfolio__filter-button">
                             Веб-сайти
                         </button>
                     </li>
-                    <li class="filter-item">
-                        <button type="button" class="filter-button">
+                    <li class="portfolio__filter-item">
+                        <button type="button" class="portfolio__filter-button">
                             Застосунки
                         </button>
                     </li>
-                    <li class="filter-item">
-                        <button type="button" class="filter-button">
+                    <li class="portfolio__filter-item">
+                        <button type="button" class="portfolio__filter-button">
                             Дизайн
                         </button>
                     </li>
-                    <li class="filter-item">
-                        <button type="button" class="filter-button">
+                    <li class="portfolio__filter-item">
+                        <button type="button" class="portfolio__filter-button">
                             Маркетинг
                         </button>
                     </li>
                 </ul>
-                <ul class='project-list'>
-                    <li class="project-item">
-                        <img src="./img/portfolio/cards/tablet.jpg" alt="Фото портфоліо 1" width="370" class="project-img">
-                        <p class="project-overlay">
+                <ul class="project">
+                    <li class="project__item">
+                        <img src="./img/portfolio/ноутбук.jpg" alt="ноутбук" 
+                        width="370" class="project__img">
+                        <p class="project__overlay">
                             Технокрик це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
                         </p>
-                        <div class="project-text">
-                            <h2 class="project-name">Технокряк</h2>
-                            <p class="project-category">Веб-сайт</p>
+                        <div class="project__text">
+                            <h2 class="project__name">Технокряк</h2>
+                            <p class="project__category">Веб-сайт</p>
                         </div>
                     </li>
-                    <li class="project-item">
-                        <img src="./img/portfolio/cards/basketball.jpg" alt="Фото портфоліо " width="370" class="project-img">
-                        <p class="project-overlay">
+                    <li class="project__item">
+                        <img src="./img/portfolio/баскетболісти.jpg" alt="баскетболісти "
+                         width="370" class="project__img">
+                        <p class="project__overlay">
                             Технокрик це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
                         </p>
-                        <div class="project-text">
-                            <h2 class="project-name">Постер New Orlean vs Golden Star</h2>
-                            <p class="project-category">Дизайн</p>
+                        <div class="project__text">
+                            <h2 class="project__name">Постер New Orlean vs Golden Star</h2>
+                            <p class="project__category">Дизайн</p>
                         </div>
                     </li>
-                    <li class="project-item">
-                        <img src="./img/portfolio/cards/seafood.jpg" alt="Фото портфоліо 3" width="370" class="project-img">
-                        <p class="project-overlay">
+                    <li class="project__item">
+                        <img src="./img/portfolio/назва-ресторану.jpg" alt="ресторан"
+                         width="370" class="project__img">
+                        <p class="project__overlay">
                             Технокрик це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
                         </p>
-                        <div class="project-text">
-                            <h2 class="project-name">Ресторан Seafood</h2>
-                            <p class="project-category">Застосунок</p>
+                        <div class="project__text">
+                            <h2 class="project__name">Ресторан Seafood</h2>
+                            <p class="project__category">Застосунок</p>
                         </div>
                     </li>
-                    <li class="project-item">
-                        <img src="./img/portfolio/cards/ears.jpg" alt="Фото портфоліо 4" width="370" class="project-img">
-                        <p class="project-overlay">
+                    <li class="project__item">
+                        <img src="./img/portfolio/навушники.jpg" alt="навушники"
+                         width="370" class="project__img">
+                        <p class="project__overlay">
                             Технокрик це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
                         </p>
-                        <div class="project-text">
-                            <h2 class="project-name">Проект Prime</h2>
-                            <p class="project-category">Маркетинг</p>
+                        <div class="project__text">
+                            <h2 class="project__name">Проект Prime</h2>
+                            <p class="project__category">Маркетинг</p>
                         </div>
                     </li>
-                    <li class="project-item">
-                        <img src="./img/portfolio/cards/box.jpg" alt="Фото портфоліо 5" width="370" class="project-img">
-                        <p class="project-overlay">
+                    <li class="project__item">
+                        <img src="./img/portfolio/коробки.jpg" alt="коробки" 
+                        width="370" class="project__img">
+                        <p class="project__overlay">
                             Технокрик це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
                         </p>
-                        <div class="project-text">
-                            <h2 class="project-name">Проект Boxes</h2>
-                            <p class="project-category">Застосунок</p>
+                        <div class="project__text">
+                            <h2 class="project__name">Проект Boxes</h2>
+                            <p class="project__category">Застосунок</p>
                         </div>
                     </li>
-                    <li class="project-item">
-                        <img src="./img/portfolio/cards/mac.jpg" alt="Фото портфоліо 6" width="370" class="project-img">
-                        <p class="project-overlay">
+                    <li class="project__item">
+                        <img src="./img/portfolio/комп'ютер.jpg" alt="комп'ютер" 
+                        width="370" class="project__img">
+                        <p class="project__overlay">
                             Технокрик це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
                         </p>
-                        <div class="project-text">
-                            <h2 class="project-name">Inspiration has no Borders</h2>
-                            <p class="project-category">Веб-сайт</p>
+                        <div class="project__text">
+                            <h2 class="project__name">Inspiration has no Borders</h2>
+                            <p class="project__category">Веб-сайт</p>
                         </div>
                     </li>
-                    <li class="project-item">
-                        <img src="./img/portfolio/cards/book.jpg" alt="Фото портфоліо 7" width="370" class="project-img">
-                        <p class="project-overlay">
+                    <li class="project__item">
+                        <img src="./img/portfolio/книга.jpg" alt="книга"
+                         width="370" class="project-_img">
+                        <p class="project__overlay">
                             Технокрик це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
                         </p>
-                        <div class="project-text">
-                            <h2 class="project-name">Видавництво Limited Edition</h2>
-                            <p class="project-category">Дизайн</p>
+                        <div class="project__text">
+                            <h2 class="project__name">Видавництво Limited Edition</h2>
+                            <p class="project__category">Дизайн</p>
                         </div>
                     </li>
-                    <li class="project-item">
-                        <img src="./img/portfolio/cards/tag.jpg" alt="Фото портфоліо 8" width="370" class="project-img">
+                    <li class="project__item">
+                        <img src="./img/portfolio/бірка.jpg" alt="бірка"
+                         width="370" class="project__img">
                         <p class="project-overlay">
                             Технокрик це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
                         </p>
-                        <div class="project-text">
-                            <h2 class="project-name">Проект LAB</h2>
-                            <p class="project-category">Маркетинг</p>
+                        <div class="project__text">
+                            <h2 class="project__name">Проект LAB</h2>
+                            <p class="project__category">Маркетинг</p>
                         </div>
                     </li>
-                    <li class="project-item">
-                        <img src="./img/portfolio/cards/pc.jpg" alt="Фото портфоліо 9" width="370" class="project-img">
-                        <p class="project-overlay">
+                    <li class="project__item">
+                        <img src="./img/portfolio/ноутбук-2.jpg" alt="ноутбук-2"
+                         width="370" class="project__img">
+                        <p class="project__overlay">
                             Технокрик це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
                         </p>
-                        <div class="project-text">
-                            <h2 class="project-name">Growing Business</h2>
-                            <p class="project-category">Застосунок</p>
+                        <div class="project__text">
+                            <h2 class="project__name">Growing Business</h2>
+                            <p class="project__category">Застосунок</p>
                         </div>
                     </li>
                 </ul>
@@ -183,64 +193,63 @@
         </section>
     </main>
 
-    <footer class="footer-section">
-        <div class="footer-container">
-            <div class="footer-column1">
-                <a href="./index.html" class="footer-logo">Web<span class="logo-white">Studio</span></a>
-                <ul class="footer-list">
-                    <li class="footer-item">
-                        <address class="footer-adress">м. Київ, пр-т Лесі Українки, 26</address>
+<footer class="footer">
+        <div class="footer__container">
+            <div class="footer__column1">
+                <a href="./index.html" class="footer__logo">Web<span class="logo__white">Studio</span></a>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <address class="footer__adress">м. Київ, пр-т Лесі Українки, 26</address>
                     </li>
-                    <li class="footer-item">
-                        <a href="mailto:info@example.com" class="header-link header-contact footer-contact">info@example.com</a>
+                    <li class="footer__item">
+                        <a href="mailto:info@example.com" class="header__link header__contact footer__contact">info@example.com</a>
                     </li>
-                    <li class="footer-item">
-                        <a href="tel:+380961111111" class="header-link header-contact footer-contact">+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
-        
-            <div class="footer-column">
-                <h2 class="footer-title">Приєднуйтесь</h2>
-                <ul class="footer-socials">
-                    <li class="footer-soc">
-                        <a href="./" class="footer-link">
-                            <svg width="20" height="20" class="footer-svg">
-                                <use href="./symbol-defs.svg#icon-inst">
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-soc">
-                        <a href="./" class="footer-link">
-                            <svg width="20" height="20" class="footer-svg">
-                                <use href="./symbol-defs.svg#icon-twt">
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-soc">
-                        <a href="./" class="footer-link">
-                            <svg width="20" height="20" class="footer-svg">
-                                <use href="./symbol-defs.svg#icon-facebook">
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-soc">
-                        <a href="./" class="footer-link">
-                            <svg width="20" height="20" class="footer-svg">
-                                <use href="./symbol-defs.svg#icon-linkedin">
-                            </svg>
-                        </a>
+                    <li class="footer__item">
+                        <a href="tel:+380961111111" class="header__link header__contact footer__contact">+38 096 111 11 11</a>
                     </li>
                 </ul>
             </div>
-            <div class="footer-column2">
-                <h2 class="footer-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
-                <form class="footer-form">
-                    <input type="email" class="footer-field" placeholder="E-mail" required>
-                    <button class="footer-but">
+            <div class="footer__column">
+                <h2 class="footer__title">Приєднуйтесь</h2>
+                <ul class="footer__socials">
+                    <li class="footer__soc">
+                        <a href="./" class="footer__link">
+                            <svg width="20" height="20" class="footer__svg">
+                                <use href="./img/symbol-defs.svg#icon-instagram">
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__soc">
+                        <a href="./" class="footer__link">
+                            <svg width="20" height="20" class="footer__svg">
+                                <use href="./img/symbol-defs.svg#icon-twitter">
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__soc">
+                        <a href="./" class="footer__link">
+                            <svg width="20" height="20" class="footer__svg">
+                                <use href="./img/symbol-defs.svg#icon-facebook">
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__soc">
+                        <a href="./" class="footer__link">
+                            <svg width="20" height="20" class="footer__svg">
+                                <use href="./img/symbol-defs.svg#icon-linkedin">
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__column2">
+                <h2 class="footer__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
+                <form class="footer__form">
+                    <input type="email" class="footer__field" placeholder="E__mail" required>
+                    <button class="footer__but">
                         Підписатись
-                        <svg class="footer-send" width="24" height="24">
-                            <use href="./symbol-defs2.svg#icon-icon-send"></use>
+                        <svg class="footer__send" width="24" height="24">
+                            <use href="./img/symbol-defs.svg#icon-icon-send"></use>
                         </svg>
                     </button>
                 </form>

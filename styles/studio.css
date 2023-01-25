@@ -1,5 +1,5 @@
 
-.form-section{
+.form{
     padding: 40px;
     width: 528px;
     height: 581px;
@@ -13,7 +13,7 @@
     border-radius: 4px;
 }
 
-.form-title{
+.form__title{
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 20px;
@@ -23,7 +23,7 @@
     color: #212121;
 }
 
-.form-container{
+.form__container{
     position: absolute;
     display: flex;
     align-items: center;
@@ -35,24 +35,24 @@
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    transition: all cubic-bezier(.11,.2,.55,1.27) 0.2s
+    transition: cubic-bezier(.11,.2,.55,1.27) 0.2s
 }
 
-.form-container:hover>.form-icon{
+.form__container:hover>.form__icon{
     fill: #2196F3;
-    transition: all ease 0.2s;
+    transition: ease 0.2s;
 }
 
-.form-item{
+.form__item{
     margin-top: 10px;
     position: relative;
 }
 
-.form-item:first-child{
+.form__item:first-child{
     margin-top: 12px;
 }
 
-.form-item:last-child{
+.form__item:last-child{
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
@@ -64,7 +64,7 @@
     margin-top: 20px;
 }
 
-.form-subtitle{
+.form__subtitle{
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 12px;
@@ -73,37 +73,35 @@
     color: #757575;
 }
 
-.form-field, .form-textarea{
+.form__field, .form__textarea{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     cursor: pointer;
     margin-top: 4px;
-    transition: all ease 0.2s;
 }
 
-.form-field:hover+.form-svg, .form-field:focus+.form-svg{
+.form__field:hover+.form__svg, .form__field:focus+.form__svg{
     fill: #2196F3;
-    transition: all ease-in-out 0.3s;
 }
 
-.form-field:hover, .form-textarea:hover{
+.form__field:hover, .form__textarea:hover{
     border-color: #2196F3;
 }
 
-.form-field{
+.form__field{
     padding: 12px 18px 12px 42px;
     height: 40px;
     width: 448px;
     display: block;
 }
 
-.form-svg{
+.form__svg{
     position: absolute;
     bottom: 14px;
     left: 15px;
 }
 
-.form-textarea{
+.form__textarea{
     width: 448px;
     height: 120px;
     padding: 12px 16px;
@@ -115,21 +113,21 @@
     color: rgba(117, 117, 117, 0.5);
 }
 
-.form-checkbox{
+.form__checkbox{
     width: 16px;
     height: 15px;
 }
 
-.form-text{
+.form__text{
     margin-left: 8.38px;
 }
 
-.form-link:link, .form-link:visited{
+.form__link:link, .form__link:visited{
     color: #2196F3;
     text-decoration: underline #2196F3;
 }
 
-.form-but{
+.form__but{
     width: 200px;
     height: 50px;
     background: #2196F3;
@@ -153,24 +151,25 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     z-index: 2;
-    transition: all cubic-bezier(.11,.2,.55,1.27) 0.4s;
+    transition: cubic-bezier(.11,.2,.55,1.27) 0.4s;
 }
 .overlay.is-hidden{
     opacity: 0;
     pointer-events: none;
-    transition: all cubic-bezier(.11,.2,.55,1.27) 0.4s;
+    transition: cubic-bezier(.11,.2,.55,1.27) 0.4s;
 }
 
 
-.hero-section{
+.hero{
     display: flex;
     flex-direction: column;
+    background-color: #2F303A;
     height: 600px;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img/studio/background/studio.jpg');
+    background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img/background/background.jpg');
 }
-.hero-title{
+.hero__title{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -180,7 +179,7 @@
     color: #FFFFFF;
     width: 696px;
 }
-.hero-but{
+.hero__but{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;    
@@ -195,20 +194,20 @@
     margin-top: 30px;
 }
 
-.hero-but:hover {
+.hero__but:hover {
     background-color: #212121;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.benefits-section{
+.benefits{
     padding-top: 94px;
 }
-.benefits-list{
+.benefits__list{
     display: flex;
     justify-content: space-between;
 }
 
-.benefits-item:before{
+.benefits__item:before{
     width: 270px;
     height: 120px;
     content: '';
@@ -221,20 +220,20 @@
     background-position: center center;
 }
 
-.benefits-item:nth-child(1)::before{
-    background-image: url('../img/studio/icons/connection.png');
+.benefits__item:nth-child(1)::before{
+    background-image: url('../img/studio/sputnik.png');
 }
-.benefits-item:nth-child(2)::before{
-    background-image: url('../img/studio/icons/time.png');
+.benefits__item:nth-child(2)::before{
+    background-image: url('../img/studio/time.png');
 }
-.benefits-item:nth-child(3)::before{
-    background-image: url('../img/studio/icons/pc.png');
+.benefits__item:nth-child(3)::before{
+    background-image: url('../img/studio/stonks.png');
 }
-.benefits-item:nth-child(4)::before{
-    background-image: url('../img/studio/icons/man.png');
+.benefits__item:nth-child(4)::before{
+    background-image: url('../img/studio/cosmo.png');
 }
 
-.benefits-title{
+.benefits__title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -243,7 +242,7 @@
     color: #212121;
     width: 270px;
 }
-.benefits-text{
+.benefits__text{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -253,16 +252,16 @@
     margin-top: 10px;
 }
 
-.services-section{
+.services{
     padding: 94px 0;
 }
-.services-list{
+.services__list{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
 
-.services-item{
+.services__item{
     position: relative;
     font-family: 'Roboto';
     font-weight: 700;
@@ -274,7 +273,7 @@
     text-transform: uppercase;
 }
 
-.services-item::before{
+.services__item::before{
     content: 'Десктопні додатки';
     display: flex;
     position: absolute;
@@ -286,30 +285,30 @@
     height: 70px;
 }
 
-.services-item:nth-child(2)::before{
+.services__item:nth-child(2)::before{
     content: 'Мобільні додатки';
 }
 
-.services-item:nth-child(3)::before{
+.services__item:nth-child(3)::before{
     content: 'Дизайнерські рішення';
 }
 
-.team-section{
+.team{
     background-color: #F5F4FA;
     padding: 94px 0;
 }
-.team-list{
+.team__list{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
-.team-item{
+.team__item{
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 30px;
 }
-.team-name{
+.team__name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;    
@@ -318,7 +317,7 @@
     color: #212121;
     margin-top: 30px;
 }
-.team-pos{
+.team__pos{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;    
@@ -328,13 +327,13 @@
     margin-top: 10px;
 }
 
-.team-socials{
+.team__socials{
     display: flex;
     width: 206px;
     justify-content: space-between;
     margin: 16px auto 0;
 }
-.team-link{
+.team__link{
     display: flex;
     width: 44px;
     height: 44px;
@@ -343,28 +342,28 @@
     border-radius: 50%;
     transition: all cubic-bezier(.11,.2,.55,1.27) 0.2s;
 }
-.team-svg{
+.team__svg{
     fill: #AFB1B8;
     transition: all ease 0.2s;
 }
-.team-link:hover{
+.team__link:hover{
     background: #2196F3;
     transform: rotate(360deg);
 }
-.team-link:hover > svg{
+.team__link:hover > svg{
     fill: #fff;
 }
 
-.clients-section{
+.clients{
     padding: 94px 0;
 }
-.clients-list{
+.clients__list{
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
     width: 1170px;
 }
-.clients-item{
+.clients__item{
     height: 90px;
     width: 170px;
     display: flex;
@@ -372,28 +371,28 @@
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    transition: all ease-in-out 0.2s;
+    transition: 0.2s;
 }
-.clients-svg{
+.clients__svg{
     fill: #AFB1B8;
-    transition: all ease-out 0.2s;
+    transition: 0.2s;
 }
-.clients-item:hover{
+.clients__item:hover{
     border: 1px solid #2196F3;
 }
-.clients-item:hover > svg{
+.clients__item:hover > svg{
     fill: #2196F3;
     transform: rotate(360deg);
 }
 
-.icons-team {
+.icons__team {
     display: flex;
     width: 206px;
     justify-content: space-between;
     margin: 16px auto 0;
 }
 
-.services-title, .team-title, .clients-title{
+.services__title, .team__title, .clients__title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
