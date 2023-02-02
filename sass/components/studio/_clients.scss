@@ -1,0 +1,43 @@
+.clients{
+    padding: 94px 0;
+}
+.clients__list{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+}
+.clients__item{
+    height: 90px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: 0.2s;
+
+    &_clients__item:hover{
+    border: 1px solid #2196F3;
+    transition: 0.2s;
+}
+
+}
+.clients__svg{
+    fill: #AFB1B8;
+    transition: 0.2s;
+}
+
+.clients__item:hover > svg{
+    fill: #2196F3;
+    transition: 0.2s;
+}
+
+.clients__title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
