@@ -1,6 +1,9 @@
-@import "./base/common";
-@import "./reset/reset";
-@import "./base/header";
-@import "./components/portfolio/portfolio";
-@import "./components/portfolio/project";
-@import "./base/footer";
+@import "./utils/variables.scss";
+@import "./utils/placeholders.scss";
+@import "./utils/mixin.scss";
+@import "./base/reset.scss";
+@import "./base/common.scss";
+@import "./base/logo.scss";
+@import "./base/header.scss";
+@import "./portfolio-components/portfolio-section.scss";
+@import "./base/footer.scss";

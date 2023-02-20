@@ -1,144 +1,170 @@
-.footer{
+/* footer */
+.footer-page{
     padding: 60px 0;
-    background-color: #2F303A;
+    background-color: $footer-background-color;
+    &__container{
+        margin: 0 auto;
+        @include flex;
+        @media screen and (min-width: 320px) {
+            flex-direction: column;
+            @include size-of-box(320px, auto);
+            padding: 0 5px;
+        }
+        @media screen and (min-width: 480px) {
+            @include size-of-box(480px, auto);
+            padding: 0 15px
+        }
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            @include size-of-box(768px, auto);
+            padding: 0 89px;
+        }
+        @media screen and (min-width: 1170px) {
+            padding: 0;
+            flex-wrap: nowrap;
+            margin-top: 0;
+            @include size-of-box(1170px, auto);
+        }
+    }
+    &__column--2{
+        margin-left: 70px;
+        @media screen and (min-width: 320px) {
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+        @media screen and (min-width: 768px) {
+            margin-top: -50px;
+        }
+        @media screen and (min-width: 1170px) {
+            margin-top: 0;
+            padding-top: 12px;
+        }
+    }
+    &__column--3{
+        @media screen and (min-width: 320px) {
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+        @media screen and (min-width: 1170px) {
+            margin-top: 12px;
+        }
+    }
+    &__title{
+        @include text-style(700, 14px, 1.14, auto, 0.03em, $footer-color);
+        text-transform: uppercase;
+        @media screen and (min-width: 320px) {
+            @include flex;
+        }
+        @media screen and (min-width: 1170px) {
+            display: block;
+        }
+    }
 }
-
-.footer__container{
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-    display: flex;
-}
-
-.footer__list{
+.contact-information{
     margin-top: 20px;
+    &__item{
+        margin-top: 9px;
+        &:first-child{
+            margin-top: 0px;
+        }
+    }
+    &__adress{
+        @include text-style(400, 14px, 1.71, start, 0.03em, $footer-color);
+        color: $footer-color;
+        @media screen and (min-width: 320px) {
+            @include flex;
+        }
+        @media screen and (min-width: 1170px) {
+            display: block;
+        }
+    }
+    &__contact{
+        @include text-style(400, 14px, 1.71, start, 0.03em, rgba(255, 255, 255, 0.6));
+        justify-content: start;
+        @media screen and (min-width: 320px) {
+            @include flex;
+        }
+        @media screen and (min-width: 1170px) {
+            display: block;
+        }
+    }
 }
-.footer__item{
-    margin-top: 9px;
-}
-.footer__item:first-child{
-    margin-top: 0px;
-}
-.footer__adress{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;    
-    font-style: normal;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-}
-.footer__contact{
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.footer__column1{
-    margin-left: 70px;
-    padding-top: 12px;
-}
-.footer__title{
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-.footer__socials{
+.socials{
     margin-top: 20px;
-    display: flex;
-    width: 206px;
-    justify-content: space-between;
+    @include flex(space-between);
+    @include size-of-box(206px, auto);
+    &__item{
+        @include size-of-box(44px, 44px);
+        border-radius: 50%;
+        @include flex;
+        background: $socials-item-background-color;
+        transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
+        &:hover{
+            background: $active-color;
+            transform: rotate(360deg);
+        }
+    }
+    &__svg{
+        fill: $footer-color;
+        transition: all cubic-bezier(.77,.22,.1,.96) 0.2s;
+    }
 }
-.footer__soc{
-    width: 44px;
-    border-radius: 50%;
-    height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.1);
-    transition: cubic-bezier(.77,.22,.1,.96) 0.2s;
-}
-.footer__svg{
-    fill: #FFF;
-    transition: cubic-bezier(.77,.22,.1,.96) 0.2s;
-}
-.footer__soc:hover{
-    background: #2196F3;
-}
-
-
-
-.footer-svg{
-    fill: #FFF;
-    transition: 0.2s;
-}
-.footer-soc:hover{
-    border-radius: 50%;
-    background: #2196F3;
-    transition: 0.2s;
-}
-
-.footer-column2{
-    margin-left: 93px;
-    padding-top: 12px;
-}
-.footer__form{
-    display: flex;
-    justify-content: space-between;
-    width: 570px;
+.footer-form{
+    @include flex(space-between);
     margin-top: 20px;
-}
-.footer__but{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 50px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    border: 0;
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-}
-.footer__field{
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background-color: transparent;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    padding: 15px 16px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    transition: ease 0.2s;
-}
-.footer__field:hover{
-    border-color: #2196F3;
-}
-.footer__send{
-    fill: #fff;
-    margin-left: 12px;
-}
-
-.container{
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
+    @media screen and (min-width: 320px) {
+        flex-direction: column;
+        min-width: 100%;
+        max-width: 480px;
+    }
+    @media screen and (min-width: 480px) {
+        @include size-of-box(450px, auto);
+    }
+    @media screen and (min-width: 1170px) {
+        flex-direction: row;
+        @include size-of-box(570px, auto);
+    }
+    &__but{
+        @include flex;
+        @include size-of-box(200px, 50px);
+        @include text-style(700, 16px, 1.88, center, 0.06em, $footer-color);
+        background: $active-color;
+        box-shadow: $footer-button-shadow;
+        border-radius: 5px;
+        border: 0;
+        @media screen and (min-width: 320px) {
+            margin-top: 20px;
+        }
+        @media screen and (min-width: 1170px) {
+            margin-top: 0;
+        }
+    }
+    &__field{
+        @include text-style(400, 16px, 1.25, auto, 0.03em, $footer-link-color);
+        border: $normal-styles-border $footer-link-border;
+        filter: drop-shadow($footer-button-shadow);
+        @extend %normal-border-radius;
+        background-color: transparent;
+        padding: 15px 16px;
+        transition: all ease 0.2s;
+        @media screen and (min-width: 320px) {
+            height: 50px;
+            min-width: 100%;
+            max-width: 480px;
+        }
+        @media screen and (min-width: 480px) {
+            @include size-of-box(450px, 50px);
+        }
+        @media screen and (min-width: 1170px) {
+            @include size-of-box(358px, 50px);
+        }
+        &:hover{
+            border-color: $active-color;
+        }
+    }
+    &__svg{
+        fill: $svg-color;
+        margin-left: 12px;
+    }
 }

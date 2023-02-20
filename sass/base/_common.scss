@@ -1,3 +1,12 @@
 body{
     font-family: 'Roboto';
 }
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.section-title{
+    @include text-style(700, 36px, 1.16, center, 0.03em, $main-color);
+}
