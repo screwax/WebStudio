@@ -4,13 +4,9 @@ body{
 
 .container{
     margin: 0 auto;
-    @media screen and (min-width: 320px){
-        max-width: 100%;
-        padding: 15px;
-    }
+    max-width: 100%;
     @media screen and (min-width: 480px){
         max-width: 450px;
-        padding: 0;
     }
     @media screen and (min-width: 768px){
         max-width: 738px;
@@ -18,6 +14,11 @@ body{
     @media screen and (min-width: 1170px){
         max-width: 1170px;
     }
+}
+
+img{
+    display: block;
+    max-width: 100%;
 }
 
 .section-title{
