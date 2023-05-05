@@ -1,5 +1,11 @@
 /* header */
 .header-page{
+    position: sticky;
+    background-color: $header-bg;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
     &__container{
         @include flex(space-between);
         height: inherit;
@@ -32,7 +38,7 @@
         margin-left: 87.8px;
         @include flex(space-between);
     }
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px){
         margin-left: 93px;
     }
     height: inherit;
@@ -65,7 +71,7 @@
         @include flex(space-between);
         flex-wrap: wrap;
     }
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px){
         @include size-of-box(333px, auto);
     }
     margin-left: auto;
@@ -78,7 +84,7 @@
                 margin-top: 0;
             }
         }
-        @media screen and (min-width: 1170px) {
+        @media screen and (min-width: 1200px){
             font-size: 14px;
             margin-top: 0;
         }
